@@ -1,34 +1,23 @@
 import { useEffect, useState } from "react";
 
 export function useDarkMode() {
-    const [isDark, setIsDark] = useState(true);
+    const [isDark, setIsDark] = useState(() => {
+        if (typeof window === "undefined") return false;
+
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") return true;
+        if (savedTheme === "light") return false;
+
+        return window.matchMedia("(prefers-color-scheme: dark)").matches;
+    });
 
     useEffect(() => {
-        const savedTheme = localStorage.getItem("theme");
-        if (savedTheme === "dark") {
-            setIsDark(true);
-            document.documentElement.classList.add("dark");
-        } else if (savedTheme === "light") {
-            setIsDark(false);
-            document.documentElement.classList.remove("dark");
-        } else {
-            if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-                setIsDark(true);
-                document.documentElement.classList.add("dark");
-            }
-        }
-    }, []);
+        document.documentElement.classList.toggle("dark", isDark);
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+    }, [isDark]);
 
     const toggleDarkMode = () => {
-        if (isDark) {
-            document.documentElement.classList.remove("dark");
-            localStorage.setItem("theme", "light");
-            setIsDark(false);
-        } else {
-            document.documentElement.classList.add("dark");
-            localStorage.setItem("theme", "dark");
-            setIsDark(true);
-        }
+        setIsDark((prev) => !prev);
     };
 
     return { isDark, toggleDarkMode };
