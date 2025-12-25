@@ -13,6 +13,28 @@
   --font-work: var(--font-work);
   --font-anton: var(--font-anton);
   --font-six-caps: var(--font-six-caps);
+  --animate-aurora: aurora 60s linear infinite;
+  --animate-shine: shine 2s linear infinite;
+
+  @keyframes aurora {
+    from {background-position: 50% 50%, 50% 50%;}
+    to {background-position: 350% 50%,350% 50%;}
+  }
+
+  @keyframes shine {
+    0% {
+      background-position: 200% 0, 0 0;
+    }
+    100% {
+      background-position: -100% 0, 0 0;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --animate-shine: none;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
