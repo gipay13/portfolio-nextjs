@@ -3,6 +3,7 @@ import AuroraBackground from "@/components/aurora-background";
 import { FloatingDock } from "@/components/floating-dock";
 import Header from "@/components/header";
 import { LinkPreview } from "@/components/link-preview";
+import ScrollVelocity from "@/components/scroll-velocity";
 import ShinyBadge from "@/components/shiny-badge";
 import SlideContent from "@/components/slide-content";
 import { IconBrandTabler, IconBrowserPlus, IconHome, IconUser } from "@tabler/icons-react";
@@ -218,6 +219,9 @@ export default function Home() {
           </div>
         </div>
       </AuroraBackground>
+      <section className="py-10 bg-zinc-100 dark:bg-zinc-950">
+        <ScrollVelocity texts={['Fullstack Web Developer', 'Fullstack Web Developer']} className="font-anton tracking-wide" />
+      </section>
     </main>
   );
 }
