@@ -1,5 +1,6 @@
 
 import AuroraBackground from "@/components/aurora-background";
+import { BoxReveal } from "@/components/box-reveal";
 import { FloatingDock } from "@/components/floating-dock";
 import Header from "@/components/header";
 import { LinkPreview } from "@/components/link-preview";
@@ -221,6 +222,35 @@ export default function Home() {
       </AuroraBackground>
       <section className="py-10 bg-zinc-100 dark:bg-zinc-950">
         <ScrollVelocity texts={['Fullstack Web Developer', 'Fullstack Web Developer']} className="font-anton tracking-wide" />
+      </section>
+      <section className="py-20 bg-zinc-100 dark:bg-zinc-950">
+        <div className="w-full max-w-4xl mx-auto">
+          <div className="flex item-center justify-between mb-10">
+            <BoxReveal boxColorLight="#09090b" boxColorDark="#f4f4f5" duration={0.5}>
+              <h1 className="font-anton text-6xl tracking-wide text-slate-950 dark:text-white">Tentang Saya</h1>
+            </BoxReveal>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
+              <div className="col-span-3">
+                <BoxReveal boxColorLight="#09090b" boxColorDark="#f4f4f5" duration={0.3}>
+                  <div className="p-5 border border-black/20 dark:border-white/[0.2] rounded-xl bg-white dark:bg-black">
+                    <p className="text-lg text-slate-950 dark:text-white">Saya seorang programmer yang berfokus pada pengembangan sistem yang menyederhanakan proses kerja dan memecahkan masalah nyata. Saya terbiasa membangun aplikasi back office yang melibatkan alur data kompleks, automasi perhitungan, dan integrasi antarbagian. Setiap masalah saya tangani dengan memahami kebutuhan pengguna, merancang alur kerja yang efisien, dan memastikan hasilnya minim bug dan mudah digunakan.</p>
+                  </div>
+                </BoxReveal>
+              </div>
+              <div className="col-span-2">
+                <BoxReveal boxColorLight="#09090b" boxColorDark="#f4f4f5" duration={0.8}>
+                  <div className="p-5 border border-black/20 dark:border-white/[0.2] rounded-xl bg-white dark:bg-black">
+                    <h3 className="text-3xl tracking-wide font-anton font-bold text-slate-950 dark:text-white">Pendidikan</h3>
+                    <ul className="list-disc list-inside text-lg text-slate-950 dark:text-white">
+                      <li className="">Universitas Bina Sarana Informatika | 2017-2021</li>
+                    </ul>
+                    <p className="text-lg"></p>
+                  </div>
+                </BoxReveal>
+              </div>
+          </div>
+        </div>
       </section>
     </main>
   );
