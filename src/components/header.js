@@ -21,7 +21,7 @@ function Header() {
 
     return (
         <motion.nav
-            initial={false} // ⬅️ penting untuk Framer Motion
+            initial={false}
             className="fixed w-full flex items-center justify-between font-medium px-5 py-2 z-40 transition-colors duration-300"
             animate={{
                 backgroundColor: isScrolled

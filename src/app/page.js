@@ -1,6 +1,7 @@
 
 import AuroraBackground from "@/components/aurora-background";
 import { BoxReveal } from "@/components/box-reveal";
+import { CardHoverEffect } from "@/components/card-hover-effect";
 import { FloatingDock } from "@/components/floating-dock";
 import Header from "@/components/header";
 import { LinkPreview } from "@/components/link-preview";
@@ -153,9 +154,9 @@ export default function Home() {
         </nav>
       </header>
       <AuroraBackground>
-        <div className="w-full h-full flex flex-col justify-between p-10">
+        <div className="w-full h-full flex flex-col justify-between px-0 py-5 md:px-10 md:py-10">
           <div className=""></div>
-          <div className="text-center px-5">
+          <div className="text-center">
             <div className="mb-3">
               <ShinyBadge text="Halo, Perkenalkan Saya" />
             </div>
@@ -171,12 +172,12 @@ export default function Home() {
               threshold={0.1}
               delay={0.1}
             >
-              <h1 className="tracking-wide uppercase text-[9rem] text-slate-950 dark:text-white font-anton leading-none mb-5">
+              <h1 className="tracking-wide uppercase text-[5rem] md:text-[9rem] text-slate-950 dark:text-white font-anton leading-none">
                 Ghifary Anshar Ariestiand
               </h1>
             </SlideContent>
           </div>
-          <div className="w-full flex items-center justify-between">
+          <div className="w-full flex flex-col md:flex-row items-center justify-between gap-3">
             <SlideContent
               distance={100}
               direction="vertical"
@@ -225,31 +226,37 @@ export default function Home() {
       </section>
       <section className="py-20 bg-zinc-100 dark:bg-zinc-950">
         <div className="w-full max-w-4xl mx-auto">
-          <div className="flex item-center justify-between mb-10">
+          <div className="flex justify-center md:justify-start mb-10">
             <BoxReveal boxColorLight="#09090b" boxColorDark="#f4f4f5" duration={0.5}>
-              <h1 className="font-anton text-6xl tracking-wide text-slate-950 dark:text-white">Tentang Saya</h1>
+              <h1 className="text-center md:text-start font-anton text-6xl tracking-wide text-slate-950 dark:text-white px-3">Tentang Saya</h1>
             </BoxReveal>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
-              <div className="col-span-3">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-3 px-3">
+              <div className="col-span-full md:col-span-3">
                 <BoxReveal boxColorLight="#09090b" boxColorDark="#f4f4f5" duration={0.3}>
-                  <div className="p-5 border border-black/20 dark:border-white/[0.2] rounded-xl bg-white dark:bg-black">
+                  <div className="p-5 border border-black/20 dark:border-white/20 rounded-xl bg-white dark:bg-black">
                     <p className="text-lg text-slate-950 dark:text-white">Saya seorang programmer yang berfokus pada pengembangan sistem yang menyederhanakan proses kerja dan memecahkan masalah nyata. Saya terbiasa membangun aplikasi back office yang melibatkan alur data kompleks, automasi perhitungan, dan integrasi antarbagian. Setiap masalah saya tangani dengan memahami kebutuhan pengguna, merancang alur kerja yang efisien, dan memastikan hasilnya minim bug dan mudah digunakan.</p>
                   </div>
                 </BoxReveal>
               </div>
-              <div className="col-span-2">
+              <div className="col-span-full md:col-span-2">
                 <BoxReveal boxColorLight="#09090b" boxColorDark="#f4f4f5" duration={0.8}>
-                  <div className="p-5 border border-black/20 dark:border-white/[0.2] rounded-xl bg-white dark:bg-black">
+                  <div className="p-5 border border-black/20 dark:border-white/20 rounded-xl bg-white dark:bg-black">
                     <h3 className="text-3xl tracking-wide font-anton font-bold text-slate-950 dark:text-white">Pendidikan</h3>
                     <ul className="list-disc list-inside text-lg text-slate-950 dark:text-white">
-                      <li className="">Universitas Bina Sarana Informatika | 2017-2021</li>
+                      <li className="">S1 Ilmu Komputer - Universitas Bina Sarana Informatika | 2017-2021</li>
                     </ul>
                     <p className="text-lg"></p>
                   </div>
                 </BoxReveal>
               </div>
           </div>
+        </div>
+      </section>
+      <section className="py-10 bg-zinc-100 dark:bg-zinc-950">
+        <div className="w-full max-w-5xl mx-auto">
+          <h1 className="font-anton text-6xl tracking-wide text-center text-slate-950 dark:text-white px-3">DevTools Yang Saya Gunakan</h1>
+          <CardHoverEffect items={tools} />
         </div>
       </section>
     </main>
