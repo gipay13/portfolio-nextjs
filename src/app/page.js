@@ -1,4 +1,3 @@
-
 import AuroraBackground from "@/components/aurora-background";
 import { BoxReveal } from "@/components/box-reveal";
 import { CardHoverEffect } from "@/components/card-hover-effect";
@@ -8,7 +7,9 @@ import { LinkPreview } from "@/components/link-preview";
 import ScrollVelocity from "@/components/scroll-velocity";
 import ShinyBadge from "@/components/shiny-badge";
 import SlideContent from "@/components/slide-content";
+import Tabs from "@/components/tabs";
 import { IconBrandTabler, IconBrowserPlus, IconHome, IconUser } from "@tabler/icons-react";
+import Image from "next/image";
 import { SiGit, SiLaravel, SiMysql, SiNextdotjs, SiTailwindcss } from "react-icons/si";
 
 export default function Home() {
@@ -145,6 +146,45 @@ export default function Home() {
     },
   ];
 
+  const variantTabs = [
+    {
+      key: "hrg",
+      title: "HRG",
+      content: <div className="p-5 rounded-lg bg-black">
+        <Image className="w-full object-cover rounded-md" src="/portfolio/Landing Page RSUD Kota Bogor.jpg" alt="portfolio-1" width={1000} height={1000} />
+        <div className=" mt-4">
+          <h1 className="text-lg font-semibold">Landing Page Artikel RSUD Kota Bogor</h1>
+          <p className="text-sm text-zinc-600 mt-1">Nam mattis ante nec congue posuere. In et augue tristique, convallis neque ac, elementum urna. Aenean sodales ante sed pretium facilisis. Nulla id velit fringilla, fermentum nisi quis, luctus quam. Sed gravida est non nunc laoreet, at gravida ligula maximus. Etiam in enim laoreet, egestas urna sit amet, sodales leo. Donec laoreet, nibh et varius iaculis, risus nibh dapibus risus, facilisis gravida lorem orci a massa.</p>
+          <div className="flex items-center gap-1.5 mt-5">
+            <span class="bg-blue-200 border border-blue-400 text-blue-400 text-xs font-medium px-1.5 py-0.5 rounded">Brand</span>
+            <span class="bg-blue-200 border border-blue-400 text-blue-400 text-xs font-medium px-1.5 py-0.5 rounded">Brand</span>
+            <span class="bg-blue-200 border border-blue-400 text-blue-400 text-xs font-medium px-1.5 py-0.5 rounded">Brand</span>
+          </div>
+        </div>
+      </div>,
+    },
+    {
+      key: "landing-page-rsud",
+      title: "Landing Page Artikel RSUD Kota Bogor",
+      content: <p className="text-muted-foreground">Film editing tools</p>,
+    },
+    {
+      key: "cppt-klinik-pribadi",
+      title: "CPPT Klinik Pribadi",
+      content: <p className="text-muted-foreground">Film editing tools</p>,
+    },
+    {
+      key: "inventaris-rsud",
+      title: "Inventaris RSUD Kota Bogor",
+      content: <p className="text-muted-foreground">Audio recording controls</p>,
+    },
+    {
+      key: "simpeg-rsud",
+      title: "SIMPEG RSUD Kota Bogor",
+      content: <p className="text-muted-foreground">Audio recording controls</p>,
+    },
+  ];
+
   return (
     <main className="relative">
       <header>
@@ -257,6 +297,14 @@ export default function Home() {
         <div className="w-full max-w-5xl mx-auto">
           <h1 className="font-anton text-6xl tracking-wide text-center text-slate-950 dark:text-white px-3">DevTools Yang Saya Gunakan</h1>
           <CardHoverEffect items={tools} />
+        </div>
+      </section>
+      <section className="py-10 bg-zinc-100 dark:bg-zinc-950">
+        <div className="w-full mx-auto">
+          <h1 className="font-anton text-6xl tracking-wide text-center text-slate-950 dark:text-white px-3">Projek Yang Telah Saya Selsaikan</h1>
+          <div className="w-full mt-10 max-w-3xl mx-auto">
+            <Tabs items={variantTabs} />
+          </div>
         </div>
       </section>
     </main>
