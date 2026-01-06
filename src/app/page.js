@@ -9,7 +9,6 @@ import ShinyBadge from "@/components/shiny-badge";
 import SlideContent from "@/components/slide-content";
 import Tabs from "@/components/tabs";
 import { IconBrandTabler, IconBrowserPlus, IconHome, IconUser } from "@tabler/icons-react";
-import Image from "next/image";
 import { SiGit, SiLaravel, SiMysql, SiNextdotjs, SiTailwindcss } from "react-icons/si";
 
 export default function Home() {
@@ -39,35 +38,35 @@ export default function Home() {
   const tools = [
     {
       logo: '/logo/Laravel.png',
-      icon: <SiLaravel className="size-10 text-zinc-400" />,
+      icon: <SiLaravel className="size-10 text-neutral-400" />,
       title: "Laravel",
       description: "Elegant full-stack framework",
       link: "https://laravel.com/",
     },
     {
       logo: '/logo/Tailwind.png',
-      icon: <SiTailwindcss className="size-10 text-zinc-400" />,
+      icon: <SiTailwindcss className="size-10 text-neutral-400" />,
       title: "Tailwind CSS",
       description: "Utility-first styling",
       link: "https://tailwindcss.com/",
     },
     {
       logo: '/logo/Next.png',
-      icon: <SiNextdotjs className="size-10 text-zinc-400" />,
+      icon: <SiNextdotjs className="size-10 text-neutral-400" />,
       title: "NextJS",
       description: "Production-ready React framework",
       link: "https://nextjs.org/",
     },
     {
       logo: '/logo/Git.png',
-      icon: <SiGit className="size-10 text-zinc-400" />,
+      icon: <SiGit className="size-10 text-neutral-400" />,
       title: "Git",
       description: "Distributed version control",
       link: "https://git-scm.com/",
     },
     {
       logo: '/logo/MySQL.png',
-      icon: <SiMysql className="size-10 text-zinc-400" />,
+      icon: <SiMysql className="size-10 text-neutral-400" />,
       title: "MySQL",
       description: "Reliable relational database",
       link: "https://www.mysql.com/",
@@ -246,7 +245,7 @@ export default function Home() {
               threshold={0.1}
               delay={0.3}
             >
-              <h6 className="text-5xl uppercase tracking-wide text-zinc-500 font-six-caps font-bold">
+              <h6 className="text-5xl uppercase tracking-wide text-neutral-500 font-six-caps font-bold">
                 Fullstack Web Developer
               </h6>
             </SlideContent>
@@ -262,7 +261,7 @@ export default function Home() {
               threshold={0.1}
               delay={0.3}
             >
-              <div className="flex items-center gap-4 z-40 text-zinc-500">
+              <div className="flex items-center gap-4 z-40 text-neutral-500">
                 {tools.slice(0, 5).map((item) => (
                   <LinkPreview
                     key={item.title}
@@ -283,20 +282,20 @@ export default function Home() {
       <section className="py-20 bg-zinc-100 dark:bg-zinc-950">
         <div className="w-full max-w-4xl mx-auto">
           <div className="flex justify-center md:justify-start mb-10">
-            <BoxReveal boxColorLight="#09090b" boxColorDark="#f4f4f5" duration={0.5}>
+            <BoxReveal boxColorLight="#18181b" boxColorDark="#e5e5e5" duration={0.5}>
               <h1 className="text-center md:text-start font-anton text-6xl tracking-wide text-slate-950 dark:text-white px-3">Tentang Saya</h1>
             </BoxReveal>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-5 gap-3 px-3">
               <div className="col-span-full md:col-span-3">
-                <BoxReveal boxColorLight="#09090b" boxColorDark="#f4f4f5" duration={0.3}>
+                <BoxReveal boxColorLight="#18181b" boxColorDark="#e5e5e5" duration={0.3}>
                   <div className="p-5 border border-black/20 dark:border-white/20 rounded-xl bg-white dark:bg-black">
                     <p className="text-lg text-slate-950 dark:text-white">Saya seorang programmer yang berfokus pada pengembangan sistem yang menyederhanakan proses kerja dan memecahkan masalah nyata. Saya terbiasa membangun aplikasi back office yang melibatkan alur data kompleks, automasi perhitungan, dan integrasi antarbagian. Setiap masalah saya tangani dengan memahami kebutuhan pengguna, merancang alur kerja yang efisien, dan memastikan hasilnya minim bug dan mudah digunakan.</p>
                   </div>
                 </BoxReveal>
               </div>
               <div className="col-span-full md:col-span-2">
-                <BoxReveal boxColorLight="#09090b" boxColorDark="#f4f4f5" duration={0.8}>
+                <BoxReveal boxColorLight="#18181b" boxColorDark="#e5e5e5" duration={0.8}>
                   <div className="p-5 border border-black/20 dark:border-white/20 rounded-xl bg-white dark:bg-black">
                     <h3 className="text-3xl tracking-wide font-anton font-bold text-slate-950 dark:text-white">Pendidikan</h3>
                     <ul className="list-disc list-inside text-lg text-slate-950 dark:text-white">
