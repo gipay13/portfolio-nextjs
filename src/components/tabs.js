@@ -53,7 +53,8 @@ export function Tabs({
             "flex items-center justify-start gap-2",
             "px-4 py-2",
             "rounded-lg",
-            isSelected ? 'text-zinc-300 dark:text-zinc-800' : "text-zinc-600 hover:text-zinc-300"
+            "cursor-pointer",
+            isSelected ? 'text-neutral-300 dark:text-slate-950' : "text-neutral-400 hover:text-slate-950"
         );
 
         return base

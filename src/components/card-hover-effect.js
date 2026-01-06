@@ -67,7 +67,7 @@ export const CardImage = ({ src }) => {
 
 export const CardTitle = ({ className, children }) => {
     return (
-        <h4 className={cn(" text-zinc-900 dark:text-zinc-100 font-bold tracking-wide", className)}>
+        <h4 className={cn(" text-slate-950 dark:text-neutral-100 font-bold tracking-wide", className)}>
         {children}
         </h4>
     );
@@ -75,7 +75,7 @@ export const CardTitle = ({ className, children }) => {
 
 export const CardDescription = ({ className, children }) => {
     return (
-        <p className={cn(" text-zinc-400 tracking-wide leading-relaxed text-xs", className)}>
+        <p className={cn(" text-neutral-400 dark:text-neutral-600 tracking-wide leading-relaxed text-xs", className)}>
             {children}
         </p>
     );

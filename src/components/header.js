@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { IconBrandGithub, IconCode, IconMoon, IconSun } from "@tabler/icons-react";
 import { useDarkMode } from "@/hooks/useDarkMode";
+import { AnimatedThemeToggler } from "./animated-theme-toggler";
 
 function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -54,6 +55,7 @@ function Header() {
                         <IconMoon className="size-5 text-white" />
                     )}
                 </button>
+                <AnimatedThemeToggler />
             </div>
         </motion.nav>
     );

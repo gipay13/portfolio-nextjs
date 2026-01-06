@@ -14,8 +14,8 @@ export default function PortfolioCard({ data }) {
             />
 
             <div className="mt-4">
-                <h1 className="text-lg font-semibold">{data.title}</h1>
-                <p className="text-sm text-zinc-600 mt-1">{data.description}</p>
+                <h1 className="text-lg font-semibold text-slate-950 dark:text-white">{data.title}</h1>
+                <p className="text-sm text-neutral-500 dark:text-neutral-600 mt-1">{data.description}</p>
                 <div className="flex items-center gap-1.5 mt-5 flex-wrap">
                     {data.tools?.map((tool) => (
                         <span
