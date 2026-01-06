@@ -3,10 +3,10 @@
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import PortfolioCard from "./portfolio-card";
 
 export function Tabs({
     items,
-    radius = "lg",
     defaultSelectedKey,
     selectedKey: controlledSelectedKey,
     onSelectionChange,
@@ -17,6 +17,7 @@ export function Tabs({
     const tabRefs = useRef(new Map());
     const tabListRef = useRef(null);
     const selectedKey = controlledSelectedKey ?? internalSelectedKey;
+
     const handleSelect = (key) => {
         if (!controlledSelectedKey) {
             setInternalSelectedKey(key);
@@ -47,9 +48,10 @@ export function Tabs({
         const isSelected = item.key === selectedKey;
 
         const base = cn(
-            "relative z-10 flex items-center gap-2 text-xs font-medium transition-colors duration-200",
-            "text-base px-4 py-2",
-            "justify-start w-full",
+            "w-full relative z-10",
+            "transition-colors duration-200",
+            "flex items-center justify-start gap-2",
+            "px-4 py-2",
             "rounded-lg",
             isSelected ? 'text-zinc-300 dark:text-zinc-800' : "text-zinc-600 hover:text-zinc-300"
         );
@@ -61,16 +63,10 @@ export function Tabs({
         <div className={cn("w-full", "flex gap-4", className)}>
             <div
                 ref={tabListRef}
-                className={cn(
-                    "relative flex gap-1 p-1",
-                    "flex-col",
-                    "bg-white dark:bg-black border border-black/10 dark:border-white/10",
-                    "rounded-lg",
-                    "shrink-0"
-                )}
+                className="relative flex flex-col gap-1 p-1 bg-white dark:bg-black border border-black/10 dark:border-white/10 rounded-lg shrink-0"
             >
                 <motion.div
-                    className={cn("absolute z-0", 'bg-zinc-900 dark:bg-white', "rounded-lg")}
+                    className="absolute z-0 bg-zinc-900 dark:bg-white rounded-lg"
                     initial={false}
                     animate={{
                         left: cursorStyle.left,
@@ -95,8 +91,7 @@ export function Tabs({
                         role="tab"
                         aria-selected={item.key === selectedKey}
                     >
-                        {item.icon}
-                        <span className="text-xs">{item.title}</span>
+                        <span className="font-medium text-base">{item.title}</span>
                     </button>
                 ))}
             </div>
@@ -106,10 +101,14 @@ export function Tabs({
                 initial={{ opacity: 0, y: 0, x: 10 }}
                 animate={{ opacity: 1, y: 0, x: 0 }}
                 transition={{ duration: 0.2 }}
-                className={cn("text-foreground", "flex-1")}
+                className="text-foreground flex-1"
                 role="tabpanel"
             >
-                {selectedItem?.content}
+                {typeof selectedItem?.content === "object" ? (
+                    <PortfolioCard data={selectedItem.content} />
+                ) : (
+                    selectedItem?.content
+                )}
             </motion.div>
         </div>
     );

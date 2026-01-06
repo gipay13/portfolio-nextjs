@@ -150,38 +150,54 @@ export default function Home() {
     {
       key: "hrg",
       title: "HRG",
-      content: <div className="p-5 rounded-lg bg-black">
-        <Image className="w-full object-cover rounded-md" src="/portfolio/Landing Page RSUD Kota Bogor.jpg" alt="portfolio-1" width={1000} height={1000} />
-        <div className=" mt-4">
-          <h1 className="text-lg font-semibold">Landing Page Artikel RSUD Kota Bogor</h1>
-          <p className="text-sm text-zinc-600 mt-1">Nam mattis ante nec congue posuere. In et augue tristique, convallis neque ac, elementum urna. Aenean sodales ante sed pretium facilisis. Nulla id velit fringilla, fermentum nisi quis, luctus quam. Sed gravida est non nunc laoreet, at gravida ligula maximus. Etiam in enim laoreet, egestas urna sit amet, sodales leo. Donec laoreet, nibh et varius iaculis, risus nibh dapibus risus, facilisis gravida lorem orci a massa.</p>
-          <div className="flex items-center gap-1.5 mt-5">
-            <span class="bg-blue-200 border border-blue-400 text-blue-400 text-xs font-medium px-1.5 py-0.5 rounded">Brand</span>
-            <span class="bg-blue-200 border border-blue-400 text-blue-400 text-xs font-medium px-1.5 py-0.5 rounded">Brand</span>
-            <span class="bg-blue-200 border border-blue-400 text-blue-400 text-xs font-medium px-1.5 py-0.5 rounded">Brand</span>
-          </div>
-        </div>
-      </div>,
+      content: {
+        title: 'HRG',
+        image: '/portfolio/hrg.jpg',
+        description: 'hrg.id adalah website profil perusahaan yang dirancang untuk memperkuat identitas digital HRG sebagai manajemen holding yang menaungi berbagai brand di sektor hospitality dan lifestyle. Situs ini menampilkan portofolio usaha, brand-brand di bawahnya, serta konten terkait, sehingga pengunjung dapat memahami ruang lingkup bisnis HRG secara profesional dan terstruktur.',
+        tools: [
+          {
+            key: 'reactjs',
+            name: 'React JS',
+            color: '#58c4dc'
+          },
+          {
+            key: 'laravel',
+            name: 'Laravel',
+            color: '#f53003'
+          },
+          {
+            key: 'tailwind',
+            name: 'Tailwind CSS',
+            color: '#00bcff'
+          },
+        ]
+      },
     },
     {
       key: "landing-page-rsud",
-      title: "Landing Page Artikel RSUD Kota Bogor",
-      content: <p className="text-muted-foreground">Film editing tools</p>,
-    },
-    {
-      key: "cppt-klinik-pribadi",
-      title: "CPPT Klinik Pribadi",
-      content: <p className="text-muted-foreground">Film editing tools</p>,
-    },
-    {
-      key: "inventaris-rsud",
-      title: "Inventaris RSUD Kota Bogor",
-      content: <p className="text-muted-foreground">Audio recording controls</p>,
-    },
-    {
-      key: "simpeg-rsud",
-      title: "SIMPEG RSUD Kota Bogor",
-      content: <p className="text-muted-foreground">Audio recording controls</p>,
+      title: "Website RSUD Kota Bogor",
+      content: {
+        title: 'Website RSUD Kota Bogor',
+        image: '/portfolio/landing-page-rsud-kota-bogor.jpg',
+        description: 'Website rsud.kotabogor.go.id merupakan portal informasi resmi Rumah Sakit Umum Daerah Kota Bogor yang dirancang untuk memberikan akses cepat dan mudah bagi pasien serta masyarakat dalam memperoleh informasi layanan kesehatan, jadwal dokter, fasilitas medis, serta edukasi kesehatan serta membantu memfasilitasi komunikasi antara rumah sakit dan publik secara efektif.',
+        tools: [
+          {
+            key: 'laravel',
+            name: 'Laravel',
+            color: '#f53003'
+          },
+          {
+            key: 'alpinejs',
+            name: 'Alpine JS',
+            color: '#3999b1'
+          },
+          {
+            key: 'tailwind',
+            name: 'Tailwind CSS',
+            color: '#00bcff'
+          },
+        ]
+      },
     },
   ];
 
