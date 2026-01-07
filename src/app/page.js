@@ -198,6 +198,32 @@ export default function Home() {
         ]
       },
     },
+    {
+      key: "cppt-digital",
+      title: "CPPT Digital",
+      content: {
+        title: 'CPPT Digital',
+        image: '/portfolio/cppt-digital.jpg',
+        description: 'Aplikasi pencatatan perkembangan pasien berbasis web. Sistem ini memfasilitasi pencatatan medis digital secara terstruktur menggunakan metode SOAP untuk membantu tenaga medis dalam mengelola catatan pasien secara cepat, rapi, dan terstandarisasi.',
+        tools: [
+          {
+            key: 'laravel',
+            name: 'Laravel',
+            color: '#f53003'
+          },
+          {
+            key: 'alpinejs',
+            name: 'Alpine JS',
+            color: '#3999b1'
+          },
+          {
+            key: 'tailwind',
+            name: 'Tailwind CSS',
+            color: '#00bcff'
+          },
+        ]
+      },
+    },
   ];
 
   return (
