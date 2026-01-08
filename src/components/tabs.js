@@ -54,17 +54,17 @@ export function Tabs({
             "px-4 py-2",
             "rounded-lg",
             "cursor-pointer",
-            isSelected ? 'text-neutral-300 dark:text-slate-950' : "text-neutral-400 hover:text-slate-950"
+            isSelected ? 'text-neutral-300 dark:text-slate-950' : "text-neutral-500 hover:text-neutral-700"
         );
 
         return base
     };
 
     return (
-        <div className={cn("w-full", "flex gap-4", className)}>
+        <div className={cn("w-full", "flex flex-col md:flex-row gap-4", className)}>
             <div
                 ref={tabListRef}
-                className="relative flex flex-col gap-1 p-1 bg-white dark:bg-black border border-black/10 dark:border-white/10 rounded-lg shrink-0"
+                className="relative flex flex-row md:flex-col gap-1 p-1 bg-white dark:bg-black border border-black/10 dark:border-white/10 rounded-lg shrink-0"
             >
                 <motion.div
                     className="absolute z-0 bg-zinc-900 dark:bg-white rounded-lg"

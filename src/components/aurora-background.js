@@ -5,7 +5,6 @@ import React from "react";
 
 export default function AuroraBackground({className, children, showRadialGradient = true, ...props}) {
     return (
-        <section>
             <div
                 className={cn(
                     "transition-bg relative flex h-screen flex-col items-center justify-center bg-zinc-100 dark:bg-zinc-950",
@@ -73,6 +72,5 @@ export default function AuroraBackground({className, children, showRadialGradien
                 </div>
                 {children}
             </div>
-        </section>
     );
 };

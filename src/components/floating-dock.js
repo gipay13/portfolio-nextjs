@@ -5,6 +5,13 @@ import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
 import { AnimatePresence, motion, useMotionValue, useSpring, useTransform } from "motion/react";
 import { useRef, useState } from "react";
 
+const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+};
+
 export const FloatingDock = ({items, desktopClassName, mobileClassName}) => {
     return (
         <>
@@ -41,9 +48,9 @@ const FloatingDockMobile = ({items, className}) => {
                                 }}
                                 transition={{ delay: (items.length - 1 - idx) * 0.05 }}
                             >
-                                <a href={item.href} key={item.title} className="flex size-12 items-center justify-center rounded-full bg-gray-50 dark:bg-neutral-900">
+                                <button onClick={() => scrollToSection(item.id)} key={item.title} className="flex size-12 items-center justify-center rounded-full bg-gray-50 dark:bg-neutral-900">
                                     <div className="size-7">{item.icon}</div>
-                                </a>
+                                </button>
                             </motion.div>
                         ))}
                     </motion.div>
@@ -76,7 +83,7 @@ const FloatingDockDesktop = ({items, className}) => {
     );
 };
 
-function IconContainer({mouseY, title, icon, href}) {
+function IconContainer({mouseY, title, icon, id}) {
     let ref = useRef(null);
 
     let distance = useTransform(mouseY, (val) => {
@@ -115,7 +122,7 @@ function IconContainer({mouseY, title, icon, href}) {
     const [hovered, setHovered] = useState(false);
 
     return (
-        <a href={href}>
+        <button onClick={() => scrollToSection(id)}>
             <motion.div
                 ref={ref}
                 style={{ width, height }}
@@ -142,6 +149,6 @@ function IconContainer({mouseY, title, icon, href}) {
                     {icon}
                 </motion.div>
             </motion.div>
-        </a>
+        </button>
     );
 }

@@ -2,6 +2,7 @@ import AuroraBackground from "@/components/aurora-background";
 import { BoxReveal } from "@/components/box-reveal";
 import { CardHoverEffect } from "@/components/card-hover-effect";
 import { FloatingDock } from "@/components/floating-dock";
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { LinkPreview } from "@/components/link-preview";
 import ScrollVelocity from "@/components/scroll-velocity";
@@ -14,24 +15,24 @@ import { SiGit, SiLaravel, SiMysql, SiNextdotjs, SiTailwindcss } from "react-ico
 export default function Home() {
   const links = [
     {
+        id: 'home',
         title: "Beranda",
         icon: (<IconHome className="h-full w-full text-slate-950 dark:text-neutral-300" />),
-        href: "#",
     },
     {
+      id: 'portfolio',
+      title: "Portolio",
+      icon: (<IconBrowserPlus className="h-full w-full text-slate-950 dark:text-neutral-300" />),
+    },
+    {
+        id: 'about',
         title: "Tentang Saya",
         icon: (<IconUser className="h-full w-full text-slate-950 dark:text-neutral-300" />),
-        href: "#",
     },
     {
+        id: 'tools',
         title: "Alat Ngoding",
         icon: (<IconBrandTabler className="h-full w-full text-slate-950 dark:text-neutral-300" />),
-        href: "#",
-    },
-    {
-        title: "Portolio",
-        icon: (<IconBrowserPlus className="h-full w-full text-slate-950 dark:text-neutral-300" />),
-        href: "#",
     },
   ];
 
@@ -124,12 +125,6 @@ export default function Home() {
       title: "Codeigniter",
       description: "Lightweight PHP framework",
       link: "https://www.codeigniter.com/",
-    },
-    {
-      logo: '/logo/CSS3.png',
-      title: "CSS",
-      description: "Structured visual styling",
-      link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
     },
     {
       logo: '/logo/Dart.png',
@@ -234,78 +229,88 @@ export default function Home() {
           <FloatingDock mobileClassName="translate-x-5" items={links} />
         </nav>
       </header>
-      <AuroraBackground>
-        <div className="w-full h-full flex flex-col justify-between px-0 py-5 md:px-10 md:py-10">
-          <div className=""></div>
-          <div className="text-center">
-            <div className="mb-3">
-              <ShinyBadge text="Halo, Perkenalkan Saya" />
-            </div>
-            <SlideContent
-              distance={100}
-              direction="vertical"
-              reverse={false}
-              duration={0.8}
-              ease="power3.out"
-              initialOpacity={0}
-              animateOpacity
-              scale={1}
-              threshold={0.1}
-              delay={0.1}
-            >
-              <h1 className="tracking-wide uppercase text-[5rem] md:text-[9rem] text-slate-950 dark:text-white font-anton leading-none">
-                Ghifary Anshar Ariestiand
-              </h1>
-            </SlideContent>
-          </div>
-          <div className="w-full flex flex-col md:flex-row items-center justify-between gap-3">
-            <SlideContent
-              distance={100}
-              direction="vertical"
-              reverse={false}
-              duration={0.8}
-              ease="power3.out"
-              initialOpacity={0}
-              animateOpacity
-              scale={1}
-              threshold={0.1}
-              delay={0.3}
-            >
-              <h6 className="text-5xl uppercase tracking-wide text-neutral-500 font-six-caps font-bold">
-                Fullstack Web Developer
-              </h6>
-            </SlideContent>
-            <SlideContent
-              distance={100}
-              direction="vertical"
-              reverse={false}
-              duration={0.8}
-              ease="power3.out"
-              initialOpacity={0}
-              animateOpacity
-              scale={1}
-              threshold={0.1}
-              delay={0.3}
-            >
-              <div className="flex items-center gap-4 z-40 text-neutral-500">
-                {tools.slice(0, 5).map((item) => (
-                  <LinkPreview
-                    key={item.title}
-                    url={item.link}
-                    className="pt-0 mt-0"
-                  >
-                    {item.icon}
-                  </LinkPreview>
-                ))}
+      <section id="home">
+        <AuroraBackground >
+          <div className="w-full h-full flex flex-col justify-between px-0 py-5 md:px-10 md:py-10">
+            <div className=""></div>
+            <div className="text-center">
+              <div className="mb-3">
+                <ShinyBadge text="Halo, Perkenalkan Saya" />
               </div>
-            </SlideContent>
+              <SlideContent
+                distance={100}
+                direction="vertical"
+                reverse={false}
+                duration={0.8}
+                ease="power3.out"
+                initialOpacity={0}
+                animateOpacity
+                scale={1}
+                threshold={0.1}
+                delay={0.1}
+              >
+                <h1 className="tracking-wide uppercase text-[5rem] md:text-[9rem] text-slate-950 dark:text-white font-anton leading-none">
+                  Ghifary Anshar Ariestiand
+                </h1>
+              </SlideContent>
+            </div>
+            <div className="w-full flex flex-col md:flex-row items-center justify-between gap-3">
+              <SlideContent
+                distance={100}
+                direction="vertical"
+                reverse={false}
+                duration={0.8}
+                ease="power3.out"
+                initialOpacity={0}
+                animateOpacity
+                scale={1}
+                threshold={0.1}
+                delay={0.3}
+              >
+                <h6 className="text-5xl uppercase tracking-wide text-neutral-500 font-six-caps font-bold">
+                  Fullstack Web Developer
+                </h6>
+              </SlideContent>
+              <SlideContent
+                distance={100}
+                direction="vertical"
+                reverse={false}
+                duration={0.8}
+                ease="power3.out"
+                initialOpacity={0}
+                animateOpacity
+                scale={1}
+                threshold={0.1}
+                delay={0.3}
+              >
+                <div className="flex items-center gap-4 z-40 text-neutral-500">
+                  {tools.slice(0, 5).map((item) => (
+                    <LinkPreview
+                      key={item.title}
+                      url={item.link}
+                      className="pt-0 mt-0"
+                    >
+                      {item.icon}
+                    </LinkPreview>
+                  ))}
+                </div>
+              </SlideContent>
+            </div>
           </div>
-        </div>
-      </AuroraBackground>
+        </AuroraBackground>
+      </section>
       <section className="py-10 bg-zinc-100 dark:bg-zinc-950">
         <ScrollVelocity texts={['Fullstack Web Developer', 'Fullstack Web Developer']} className="font-anton tracking-wide" />
       </section>
-      <section className="py-20 bg-zinc-100 dark:bg-zinc-950">
+      <section id="portfolio" className="py-10 bg-zinc-100 dark:bg-zinc-950">
+        <div className="w-full mx-auto">
+          <h1 className="font-anton text-6xl tracking-wide text-center text-slate-950 dark:text-white px-3">Projek Yang Telah Saya Selsaikan</h1>
+          <div className="w-full mt-10 max-w-3xl mx-auto">
+            <Tabs items={variantTabs} />
+          </div>
+        </div>
+      </section>
+      <section id="about" className="py-20 bg-zinc-100 dark:bg-zinc-950">
         <div className="w-full max-w-4xl mx-auto">
           <div className="flex justify-center md:justify-start mb-10">
             <BoxReveal boxColorLight="#18181b" boxColorDark="#e5e5e5" duration={0.5}>
@@ -334,20 +339,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="py-10 bg-zinc-100 dark:bg-zinc-950">
+      <section id="tools" className="py-10 bg-zinc-100 dark:bg-zinc-950">
         <div className="w-full max-w-5xl mx-auto">
           <h1 className="font-anton text-6xl tracking-wide text-center text-slate-950 dark:text-white px-3">DevTools Yang Saya Gunakan</h1>
           <CardHoverEffect items={tools} />
         </div>
       </section>
-      <section className="py-10 bg-zinc-100 dark:bg-zinc-950">
-        <div className="w-full mx-auto">
-          <h1 className="font-anton text-6xl tracking-wide text-center text-slate-950 dark:text-white px-3">Projek Yang Telah Saya Selsaikan</h1>
-          <div className="w-full mt-10 max-w-3xl mx-auto">
-            <Tabs items={variantTabs} />
-          </div>
-        </div>
-      </section>
+      <Footer/>
     </main>
   );
 }
