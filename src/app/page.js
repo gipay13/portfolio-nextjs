@@ -302,7 +302,7 @@ export default function Home() {
       <section className="py-10 bg-zinc-100 dark:bg-zinc-950">
         <ScrollVelocity texts={['Fullstack Web Developer', 'Fullstack Web Developer']} className="font-anton tracking-wide" />
       </section>
-      <section id="portfolio" className="py-10 bg-zinc-100 dark:bg-zinc-950">
+      <section id="portfolio" className="py-10 px-3 bg-zinc-100 dark:bg-zinc-950">
         <div className="w-full mx-auto">
           <h1 className="font-anton text-6xl tracking-wide text-center text-slate-950 dark:text-white px-3">Projek Yang Telah Saya Selsaikan</h1>
           <div className="w-full mt-10 max-w-3xl mx-auto">

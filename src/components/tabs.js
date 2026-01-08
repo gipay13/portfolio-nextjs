@@ -48,7 +48,9 @@ export function Tabs({
         const isSelected = item.key === selectedKey;
 
         const base = cn(
-            "w-full relative z-10",
+            "relative z-10",
+            "md:w-full w-auto",
+            "shrink-0 whitespace-nowrap",
             "transition-colors duration-200",
             "flex items-center justify-start gap-2",
             "px-4 py-2",
@@ -64,7 +66,9 @@ export function Tabs({
         <div className={cn("w-full", "flex flex-col md:flex-row gap-4", className)}>
             <div
                 ref={tabListRef}
-                className="relative flex flex-row md:flex-col gap-1 p-1 bg-white dark:bg-black border border-black/10 dark:border-white/10 rounded-lg shrink-0"
+                className="relative flex flex-row md:flex-col flex-nowrap gap-1 p-1 bg-white dark:bg-black border border-black/10 dark:border-white/10 rounded-lg shrink-0 overflow-x-auto md:overflow-x-visible
+        overflow-y-hidden md:overflow-y-auto
+        scroll-smooth"
             >
                 <motion.div
                     className="absolute z-0 bg-zinc-900 dark:bg-white rounded-lg"
