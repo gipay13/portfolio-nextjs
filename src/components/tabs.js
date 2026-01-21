@@ -34,8 +34,8 @@ export function Tabs({
             const listRect = tabList.getBoundingClientRect();
 
             setCursorStyle({
-                left: tabRect.left - listRect.left,
-                top: tabRect.top - listRect.top,
+                left: tabRect.left - listRect.left + tabList.scrollLeft,
+                top: tabRect.top - listRect.top + tabList.scrollTop,
                 width: tabRect.width,
                 height: tabRect.height,
             });
