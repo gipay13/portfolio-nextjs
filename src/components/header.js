@@ -35,7 +35,7 @@ function Header() {
                 <span className="tracking-tighter">Code With Gipay</span>
             </div>
 
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2">
                 <a
                     href="https://github.com/gipay13"
                     target="_blank"
@@ -43,7 +43,6 @@ function Header() {
                 >
                     <IconBrandGithub className="size-5 dark:text-slate-950 text-white" />
                 </a>
-
                 <button
                     onClick={toggleDarkMode}
                     className="p-2 bg-slate-950 dark:bg-white rounded-full cursor-pointer"

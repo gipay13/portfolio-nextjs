@@ -9,8 +9,9 @@ import ScrollVelocity from "@/components/scroll-velocity";
 import ShinyBadge from "@/components/shiny-badge";
 import SlideContent from "@/components/slide-content";
 import Tabs from "@/components/tabs";
+import { project } from "@/data/project";
+import { tools } from "@/data/tools";
 import { IconBrandTabler, IconBrowserPlus, IconHome, IconUser } from "@tabler/icons-react";
-import { SiGit, SiLaravel, SiMysql, SiNextdotjs, SiTailwindcss } from "react-icons/si";
 
 export default function Home() {
   const links = [
@@ -33,191 +34,6 @@ export default function Home() {
         id: 'tools',
         title: "Alat Ngoding",
         icon: (<IconBrandTabler className="h-full w-full text-slate-950 dark:text-neutral-300" />),
-    },
-  ];
-
-  const tools = [
-    {
-      logo: '/logo/Laravel.png',
-      icon: <SiLaravel className="size-10 text-neutral-400" />,
-      title: "Laravel",
-      description: "Elegant full-stack framework",
-      link: "https://laravel.com/",
-    },
-    {
-      logo: '/logo/Tailwind.png',
-      icon: <SiTailwindcss className="size-10 text-neutral-400" />,
-      title: "Tailwind CSS",
-      description: "Utility-first styling",
-      link: "https://tailwindcss.com/",
-    },
-    {
-      logo: '/logo/Next.png',
-      icon: <SiNextdotjs className="size-10 text-neutral-400" />,
-      title: "NextJS",
-      description: "Production-ready React framework",
-      link: "https://nextjs.org/",
-    },
-    {
-      logo: '/logo/Git.png',
-      icon: <SiGit className="size-10 text-neutral-400" />,
-      title: "Git",
-      description: "Distributed version control",
-      link: "https://git-scm.com/",
-    },
-    {
-      logo: '/logo/MySQL.png',
-      icon: <SiMysql className="size-10 text-neutral-400" />,
-      title: "MySQL",
-      description: "Reliable relational database",
-      link: "https://www.mysql.com/",
-    },
-    {
-      logo: '/logo/PHP.png',
-      title: "PHP",
-      description: "Robust backend language",
-      link: "https://www.php.net/",
-    },
-    {
-      logo: '/logo/Bootstrap.png',
-      title: "Bootsrap CSS",
-      description: "Responsive UI toolkit",
-      link: "https://getbootstrap.com/",
-    },
-    {
-      logo: '/logo/Javascript.png',
-      title: "Javascript",
-      description: "Essential web scripting",
-      link: "https://nodejs.org/en",
-    },
-    {
-      logo: '/logo/Typescript.png',
-      title: "Typescript",
-      description: "Typed JavaScript enhancement",
-      link: "https://www.typescriptlang.org/",
-    },
-    {
-      logo: '/logo/jQuery.png',
-      title: "JQuery",
-      description: "Simplified DOM utilities",
-      link: "https://jquery.com/",
-    },
-    {
-      logo: '/logo/React.png',
-      title: "ReactJS",
-      description: "Modern UI library",
-      link: "https://reactbits.dev/",
-    },
-    {
-      logo: '/logo/Alpine.png',
-      title: "AlpineJS",
-      description: "Minimal reactive JavaScript",
-      link: "https://alpinejs.dev/",
-    },
-    {
-      logo: '/logo/Flutter.png',
-      title: "Flutter",
-      description: "Cross-platform UI toolkit",
-      link: "https://flutter.dev/",
-    },
-    {
-      logo: '/logo/Codeigniter.png',
-      title: "Codeigniter",
-      description: "Lightweight PHP framework",
-      link: "https://www.codeigniter.com/",
-    },
-    {
-      logo: '/logo/Dart.png',
-      title: "Dart",
-      description: "Scalable client language",
-      link: "https://dart.dev/",
-    },
-    {
-      logo: '/logo/Material-UI.png',
-      title: "Material UI",
-      description: "Modern React component",
-      link: "https://mui.com/",
-    },
-  ];
-
-  const variantTabs = [
-    {
-      key: "hrg",
-      title: "HRG",
-      content: {
-        title: 'HRG',
-        image: '/portfolio/hrg.jpg',
-        description: 'hrg.id adalah website profil perusahaan yang dirancang untuk memperkuat identitas digital HRG sebagai manajemen holding yang menaungi berbagai brand di sektor hospitality dan lifestyle. Situs ini menampilkan portofolio usaha, brand-brand di bawahnya, serta konten terkait, sehingga pengunjung dapat memahami ruang lingkup bisnis HRG secara profesional dan terstruktur.',
-        tools: [
-          {
-            key: 'reactjs',
-            name: 'React JS',
-            color: '#58c4dc'
-          },
-          {
-            key: 'laravel',
-            name: 'Laravel',
-            color: '#f53003'
-          },
-          {
-            key: 'tailwind',
-            name: 'Tailwind CSS',
-            color: '#00bcff'
-          },
-        ]
-      },
-    },
-    {
-      key: "landing-page-rsud",
-      title: "Website RSUD Kota Bogor",
-      content: {
-        title: 'Website RSUD Kota Bogor',
-        image: '/portfolio/landing-page-rsud-kota-bogor.jpg',
-        description: 'Website rsud.kotabogor.go.id merupakan portal informasi resmi Rumah Sakit Umum Daerah Kota Bogor yang dirancang untuk memberikan akses cepat dan mudah bagi pasien serta masyarakat dalam memperoleh informasi layanan kesehatan, jadwal dokter, fasilitas medis, serta edukasi kesehatan serta membantu memfasilitasi komunikasi antara rumah sakit dan publik secara efektif.',
-        tools: [
-          {
-            key: 'laravel',
-            name: 'Laravel',
-            color: '#f53003'
-          },
-          {
-            key: 'alpinejs',
-            name: 'Alpine JS',
-            color: '#3999b1'
-          },
-          {
-            key: 'tailwind',
-            name: 'Tailwind CSS',
-            color: '#00bcff'
-          },
-        ]
-      },
-    },
-    {
-      key: "cppt-digital",
-      title: "CPPT Digital",
-      content: {
-        title: 'CPPT Digital',
-        image: '/portfolio/cppt-digital.jpg',
-        description: 'Aplikasi pencatatan perkembangan pasien berbasis web. Sistem ini memfasilitasi pencatatan medis digital secara terstruktur menggunakan metode SOAP untuk membantu tenaga medis dalam mengelola catatan pasien secara cepat, rapi, dan terstandarisasi.',
-        tools: [
-          {
-            key: 'laravel',
-            name: 'Laravel',
-            color: '#f53003'
-          },
-          {
-            key: 'alpinejs',
-            name: 'Alpine JS',
-            color: '#3999b1'
-          },
-          {
-            key: 'tailwind',
-            name: 'Tailwind CSS',
-            color: '#00bcff'
-          },
-        ]
-      },
     },
   ];
 
@@ -302,14 +118,6 @@ export default function Home() {
       <section className="py-10 bg-zinc-100 dark:bg-zinc-950">
         <ScrollVelocity texts={['Fullstack Web Developer', 'Fullstack Web Developer']} className="font-anton tracking-wide" />
       </section>
-      <section id="portfolio" className="py-10 px-3 bg-zinc-100 dark:bg-zinc-950">
-        <div className="w-full mx-auto">
-          <h1 className="font-anton text-6xl tracking-wide text-center text-slate-950 dark:text-white px-3">Projek Yang Telah Saya Selsaikan</h1>
-          <div className="w-full mt-10 max-w-3xl mx-auto">
-            <Tabs items={variantTabs} />
-          </div>
-        </div>
-      </section>
       <section id="about" className="py-20 bg-zinc-100 dark:bg-zinc-950">
         <div className="w-full max-w-4xl mx-auto">
           <div className="flex justify-center md:justify-start mb-10">
@@ -329,13 +137,21 @@ export default function Home() {
                 <BoxReveal boxColorLight="#18181b" boxColorDark="#e5e5e5" duration={0.8}>
                   <div className="p-5 border border-black/20 dark:border-white/20 rounded-xl bg-white dark:bg-black">
                     <h3 className="text-3xl tracking-wide font-anton font-bold text-slate-950 dark:text-white">Pendidikan</h3>
-                    <ul className="list-disc list-inside text-lg text-slate-950 dark:text-white">
+                    <ul className="list-disc list-inside text-base text-slate-950 dark:text-white">
                       <li className="">S1 Ilmu Komputer - Universitas Bina Sarana Informatika | 2017-2021</li>
                     </ul>
                     <p className="text-lg"></p>
                   </div>
                 </BoxReveal>
               </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" className="py-10 px-3 bg-zinc-100 dark:bg-zinc-950">
+        <div className="w-full mx-auto">
+          <h1 className="font-anton text-6xl tracking-wide text-center text-slate-950 dark:text-white px-3">Projek Yang Telah Saya Selsaikan</h1>
+          <div className="w-full mt-10 max-w-3xl mx-auto">
+            <Tabs items={project} />
           </div>
         </div>
       </section>
