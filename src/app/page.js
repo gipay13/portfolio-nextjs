@@ -115,9 +115,9 @@ export default function Home() {
           </div>
         </AuroraBackground>
       </section>
-      <section className="py-10 bg-zinc-100 dark:bg-zinc-950">
+      {/* <section className="py-10 bg-zinc-100 dark:bg-zinc-950">
         <ScrollVelocity texts={['Fullstack Web Developer', 'Fullstack Web Developer']} className="font-anton tracking-wide" />
-      </section>
+      </section> */}
       <section id="about" className="py-20 bg-zinc-100 dark:bg-zinc-950">
         <div className="w-full max-w-4xl mx-auto">
           <div className="flex justify-center md:justify-start mb-10">
