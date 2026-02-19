@@ -79,22 +79,10 @@ export const tools = [
         link: "https://alpinejs.dev/",
     },
     {
-        logo: '/logo/Flutter.png',
-        title: "Flutter",
-        description: "Cross-platform UI toolkit",
-        link: "https://flutter.dev/",
-    },
-    {
         logo: '/logo/Codeigniter.png',
         title: "Codeigniter",
         description: "Lightweight PHP framework",
         link: "https://www.codeigniter.com/",
-    },
-    {
-        logo: '/logo/Dart.png',
-        title: "Dart",
-        description: "Scalable client language",
-        link: "https://dart.dev/",
     },
     {
         logo: '/logo/Material-UI.png',
