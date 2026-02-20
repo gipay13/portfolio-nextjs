@@ -90,4 +90,10 @@ export const tools = [
         description: "Modern React component",
         link: "https://mui.com/",
     },
+    {
+        logo: '/logo/Docker.png',
+        title: "Docker",
+        description: "Containerization platform",
+        link: "https://www.docker.com/",
+    },
 ];
