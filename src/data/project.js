@@ -77,4 +77,56 @@ export const project = [
             ]
         },
     },
+    // {
+    //     key: "kepegawaian",
+    //     title: "Kepegawaian RSUD Kota Bogor",
+    //     content: {
+    //         title: 'Kepegawaian RSUD Kota Bogor',
+    //         image: '/portfolio/cppt-digital.jpg',
+    //         description: 'Aplikasi pencatatan perkembangan pasien berbasis web. Sistem ini memfasilitasi pencatatan medis digital secara terstruktur menggunakan metode SOAP untuk membantu tenaga medis dalam mengelola catatan pasien secara cepat, rapi, dan terstandarisasi.',
+    //         tools: [
+    //             {
+    //                 key: 'laravel',
+    //                 name: 'Laravel',
+    //                 color: '#f53003'
+    //             },
+    //             {
+    //                 key: 'alpinejs',
+    //                 name: 'Alpine JS',
+    //                 color: '#3999b1'
+    //             },
+    //             {
+    //                 key: 'tailwind',
+    //                 name: 'Tailwind CSS',
+    //                 color: '#00bcff'
+    //             },
+    //         ]
+    //     },
+    // },
+    // {
+    //     key: "ticketing-system",
+    //     title: "Ticketing SIMRSUD Kota Bogor",
+    //     content: {
+    //         title: 'Ticketing SIMRSUD Kota Bogor',
+    //         image: '/portfolio/cppt-digital.jpg',
+    //         description: 'Aplikasi pencatatan perkembangan pasien berbasis web. Sistem ini memfasilitasi pencatatan medis digital secara terstruktur menggunakan metode SOAP untuk membantu tenaga medis dalam mengelola catatan pasien secara cepat, rapi, dan terstandarisasi.',
+    //         tools: [
+    //             {
+    //                 key: 'laravel',
+    //                 name: 'Laravel',
+    //                 color: '#f53003'
+    //             },
+    //             {
+    //                 key: 'alpinejs',
+    //                 name: 'Alpine JS',
+    //                 color: '#3999b1'
+    //             },
+    //             {
+    //                 key: 'tailwind',
+    //                 name: 'Tailwind CSS',
+    //                 color: '#00bcff'
+    //             },
+    //         ]
+    //     },
+    // },
   ];
