@@ -104,12 +104,12 @@ export const project = [
         },
     },
     {
-        key: "ticketing-system",
-        title: "Ticketing SIMRSUD Kota Bogor",
+        key: "inventaris",
+        title: "Inventaris SIMRSUD Kota Bogor",
         content: {
-            title: 'Ticketing SIMRSUD Kota Bogor',
+            title: 'Inventaris SIMRSUD Kota Bogor',
             image: '/portfolio/ticketing-system-simrsud-kota-bogor.jpeg',
-            description: 'Aplikasi pencatatan perkembangan pasien berbasis web. Sistem ini memfasilitasi pencatatan medis digital secara terstruktur menggunakan metode SOAP untuk membantu tenaga medis dalam mengelola catatan pasien secara cepat, rapi, dan terstandarisasi.',
+            description: 'Aplikasi untuk mendukung pengelolaan aset perangkat keras di rumah sakit. Sistem ini mencakup fungsi pencatatan barang, manajemen stok, distribusi perangkat keras dan laporan kerusakan — membantu tim simrs dalam proses administrasi barang dan mempercepat response time jika ada kerusakan.',
             tools: [
                 {
                     key: 'laravel',
