@@ -108,8 +108,8 @@ export const project = [
         title: "Inventaris SIMRSUD Kota Bogor",
         content: {
             title: 'Inventaris SIMRSUD Kota Bogor',
-            image: '/portfolio/ticketing-system-simrsud-kota-bogor.jpeg',
-            description: 'Aplikasi untuk mendukung pengelolaan aset perangkat keras di rumah sakit. Sistem ini mencakup fungsi pencatatan barang, manajemen stok, distribusi perangkat keras dan laporan kerusakan — membantu tim simrs dalam proses administrasi barang dan mempercepat response time jika ada kerusakan.',
+            image: '/portfolio/inventaris-simrsud-kota-bogor.jpeg',
+            description: 'Aplikasi untuk mendukung pengelolaan aset perangkat keras di rumah sakit. Sistem ini mencakup fungsi pencatatan barang, manajemen stok, distribusi perangkat keras dan laporan kerusakan — membantu tim simrs dalam proses administrasi barang dan mempercepat response time jika ada laporan kerusakan.',
             tools: [
                 {
                     key: 'laravel',
