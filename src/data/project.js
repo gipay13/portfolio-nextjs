@@ -5,7 +5,7 @@ export const project = [
         content: {
             title: 'HRG',
             image: '/portfolio/hrg.jpg',
-            description: 'hrg.id adalah website profil perusahaan yang dirancang untuk memperkuat identitas digital HRG sebagai manajemen holding yang menaungi berbagai brand di sektor hospitality dan lifestyle. Situs ini menampilkan portofolio usaha, brand-brand di bawahnya, serta konten terkait, sehingga pengunjung dapat memahami ruang lingkup bisnis HRG secara profesional dan terstruktur.',
+            description: 'hrg.id adalah website profil perusahaan yang dibangun untuk memperkuat identitas digital HRG sebagai holding company yang menaungi berbagai brand. Situs ini menampilkan portofolio usaha dan modul artikel untuk mendukung strategi SEO, serta terintegrasi dengan API eksternal untuk fitur pemesanan kamar hotel, mencakup autentikasi API, pengambilan data kamar, dan proses booking.',
             tools: [
                 {
                     key: 'reactjs',
