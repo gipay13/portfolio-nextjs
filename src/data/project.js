@@ -83,7 +83,7 @@ export const project = [
         content: {
             title: 'Kepegawaian RSUD Kota Bogor',
             image: '/portfolio/simpeg-rsud-kota-bogor.jpeg',
-            description: 'Aplikasi pencatatan perkembangan pasien berbasis web. Sistem ini memfasilitasi pencatatan medis digital secara terstruktur menggunakan metode SOAP untuk membantu tenaga medis dalam mengelola catatan pasien secara cepat, rapi, dan terstandarisasi.',
+            description: '',
             tools: [
                 {
                     key: 'laravel',
@@ -109,7 +109,7 @@ export const project = [
         content: {
             title: 'Inventaris SIMRSUD Kota Bogor',
             image: '/portfolio/inventaris-simrsud-kota-bogor.jpeg',
-            description: 'Aplikasi untuk mendukung pengelolaan aset perangkat keras di rumah sakit. Sistem ini mencakup fungsi pencatatan barang, manajemen stok, distribusi perangkat keras dan laporan kerusakan — membantu tim simrs dalam proses administrasi barang dan mempercepat response time jika ada laporan kerusakan.',
+            description: 'Aplikasi untuk mendukung pengelolaan aset perangkat keras di rumah sakit. Sistem ini mencakup fungsi manajemen aset (hardware, software dan sparepart), distribusi perangkat keras dan laporan kerusakan — membantu tim simrs dalam proses administrasi barang dan mempercepat response time jika ada laporan kerusakan.',
             tools: [
                 {
                     key: 'laravel',
