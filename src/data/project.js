@@ -52,12 +52,12 @@ export const project = [
         },
     },
     {
-        key: "cppt-digital",
-        title: "CPPT Digital",
+        key: "rekam-medis-pribadi",
+        title: "Rekam Medis Pribadi",
         content: {
-            title: 'CPPT Digital',
+            title: 'Rekam Medis Pribadi',
             image: '/portfolio/cppt-digital.jpg',
-            description: 'Aplikasi pencatatan perkembangan pasien berbasis web. Sistem ini memfasilitasi pencatatan medis digital secara terstruktur menggunakan metode SOAP untuk membantu tenaga medis dalam mengelola catatan pasien secara efisien, dan terstandarisasi, serta dilengkapi dashboard analitik untuk visualisasi distribusi pasien berdasarkan diagnosa.',
+            description: 'Aplikasi rekam medis berbasis web. Sistem ini memfasilitasi pencatatan medis digital secara terstruktur menggunakan metode SOAP untuk membantu tenaga medis dalam mengelola catatan pasien secara efisien, dan terstandarisasi, serta dilengkapi dashboard analitik untuk visualisasi distribusi pasien berdasarkan diagnosa.  ',
             tools: [
                 {
                     key: 'laravel',
