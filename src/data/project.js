@@ -57,7 +57,7 @@ export const project = [
         content: {
             title: 'CPPT Digital',
             image: '/portfolio/cppt-digital.jpg',
-            description: 'Aplikasi pencatatan perkembangan pasien berbasis web. Sistem ini memfasilitasi pencatatan medis digital secara terstruktur menggunakan metode SOAP untuk membantu tenaga medis dalam mengelola catatan pasien secara cepat, rapi, dan terstandarisasi.',
+            description: 'Aplikasi pencatatan perkembangan pasien berbasis web. Sistem ini memfasilitasi pencatatan medis digital secara terstruktur menggunakan metode SOAP untuk membantu tenaga medis dalam mengelola catatan pasien secara efisien, dan terstandarisasi, serta dilengkapi dashboard analitik untuk visualisasi distribusi pasien berdasarkan diagnosa.',
             tools: [
                 {
                     key: 'laravel',
