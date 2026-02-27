@@ -83,7 +83,7 @@ export const project = [
         content: {
             title: 'Kepegawaian RSUD Kota Bogor',
             image: '/portfolio/simpeg-rsud-kota-bogor.jpeg',
-            description: '',
+            description: 'Sistem manajemen pegawai berbasis web yang dibangun untuk mendigitalisasi administrasi SDM secara terintegrasi. Sistem ini mencakup berbagai modul untuk menujang pengecekan data diri pegawai dan mendukung kebutuhan administratif maupun audit internal. Sistem ini juga mencakup modul pengajuan cuti dan lembur dengan workflow persetujuan bertingkat berbasis role.',
             tools: [
                 {
                     key: 'laravel',
@@ -120,6 +120,32 @@ export const project = [
                     key: 'alpinejs',
                     name: 'Alpine JS',
                     color: '#3999b1'
+                },
+                {
+                    key: 'tailwind',
+                    name: 'Tailwind CSS',
+                    color: '#00bcff'
+                },
+            ]
+        },
+    },
+    {
+        key: "Hukum",
+        title: "Produk Hukum RSUD Kota Bogor",
+        content: {
+            title: 'Produk Hukum RSUD Kota Bogor',
+            image: '/portfolio/hukum-rsud-kota-bogor.jpg',
+            description: '',
+            tools: [
+                {
+                    key: 'laravel',
+                    name: 'Laravel',
+                    color: '#f53003'
+                },
+                {
+                    key: 'reactjs',
+                    name: 'React JS',
+                    color: '#58c4dc'
                 },
                 {
                     key: 'tailwind',
