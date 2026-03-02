@@ -52,10 +52,10 @@ export const project = [
         },
     },
     {
-        key: "rekam-medis-pribadi",
-        title: "Rekam Medis Pribadi",
+        key: "cppt",
+        title: "Catatan Perkembangan Pasien Terintegrasi",
         content: {
-            title: 'Rekam Medis Pribadi',
+            title: 'Catatan Perkembangan Pasien Terintegrasi',
             image: '/portfolio/cppt-digital.jpg',
             description: 'Aplikasi rekam medis berbasis web. Sistem ini memfasilitasi pencatatan medis digital secara terstruktur menggunakan metode SOAP untuk membantu tenaga medis dalam mengelola catatan pasien secara efisien, dan terstandarisasi, serta dilengkapi dashboard analitik untuk visualisasi distribusi pasien berdasarkan diagnosa.  ',
             tools: [
@@ -130,7 +130,7 @@ export const project = [
         },
     },
     {
-        key: "Hukum",
+        key: "hukum",
         title: "Produk Hukum RSUD Kota Bogor",
         content: {
             title: 'Produk Hukum RSUD Kota Bogor',
@@ -142,10 +142,36 @@ export const project = [
                     name: 'Laravel',
                     color: '#f53003'
                 },
-                {
+                                {
                     key: 'reactjs',
                     name: 'React JS',
                     color: '#58c4dc'
+                },
+                {
+                    key: 'tailwind',
+                    name: 'Tailwind CSS',
+                    color: '#00bcff'
+                },
+            ]
+        },
+    },
+    {
+        key: "asesmen-medis",
+        title: "Asesmen medis RSUD Kota Bogor",
+        content: {
+            title: 'Asesmen medis RSUD Kota Bogor',
+            image: '/portfolio/asesmen-medis-rsud-kota-bogor.jpg',
+            description: '',
+            tools: [
+                {
+                    key: 'laravel',
+                    name: 'Laravel',
+                    color: '#f53003'
+                },
+                {
+                    key: 'alpinejs',
+                    name: 'Alpine JS',
+                    color: '#3999b1'
                 },
                 {
                     key: 'tailwind',
