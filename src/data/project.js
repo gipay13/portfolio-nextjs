@@ -135,7 +135,7 @@ export const project = [
         content: {
             title: 'Produk Hukum RSUD Kota Bogor',
             image: '/portfolio/hukum-rsud-kota-bogor.jpg',
-            description: '',
+            description: 'Membangun sistem manajemen dokumen hukum untuk pengelolaan arsip digital, serta akses publik terbuka untuk meningkatkan transparansi dan kemudahan distribusi dokumen resmi.',
             tools: [
                 {
                     key: 'laravel',
@@ -161,7 +161,7 @@ export const project = [
         content: {
             title: 'Asesmen medis RSUD Kota Bogor',
             image: '/portfolio/asesmen-medis-rsud-kota-bogor.jpg',
-            description: '',
+            description: 'Membangun sistem pencatatan medis terstruktur yang memfasilitasi kolaborasi lintas tenaga kesehatan dalam satu platform terpusat, guna meningkatkan standar dokumentasi, transparansi data, dan efisiensi proses layanan kesehatan.',
             tools: [
                 {
                     key: 'laravel',
