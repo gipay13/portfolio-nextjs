@@ -31,7 +31,7 @@ export const project = [
         content: {
             title: 'Website RSUD Kota Bogor',
             image: '/portfolio/landing-page-rsud-kota-bogor.jpg',
-            description: 'Website rsud.kotabogor.go.id merupakan portal informasi resmi Rumah Sakit Umum Daerah Kota Bogor yang dirancang untuk memberikan akses cepat dan mudah bagi pasien serta masyarakat dalam memperoleh informasi layanan kesehatan, jadwal dokter, fasilitas medis, serta edukasi kesehatan serta membantu memfasilitasi komunikasi antara rumah sakit dan publik secara efektif.',
+            description: 'Website rsud.kotabogor.go.id merupakan portal informasi resmi Rumah Sakit Umum Daerah Kota Bogor yang dirancang untuk memberikan akses cepat dan mudah bagi pasien serta masyarakat dalam memperoleh informasi layanan kesehatan, jadwal dokter, fasilitas medis, dan edukasi kesehatan.',
             tools: [
                 {
                     key: 'laravel',
