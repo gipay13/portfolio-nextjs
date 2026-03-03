@@ -57,7 +57,7 @@ export const project = [
         content: {
             title: 'Catatan Perkembangan Pasien Terintegrasi',
             image: '/portfolio/cppt-digital.jpg',
-            description: 'Aplikasi rekam medis berbasis web. Sistem ini memfasilitasi pencatatan medis digital secara terstruktur menggunakan metode SOAP untuk membantu tenaga medis dalam mengelola catatan pasien secara efisien, dan terstandarisasi, serta dilengkapi dashboard analitik untuk visualisasi distribusi pasien berdasarkan diagnosa.  ',
+            description: 'Sistem ini memfasilitasi pencatatan medis digital yang menggunakan metode SOAP untuk membantu tenaga medis dalam mengelola catatan pasien yang terstandarisasi, serta dilengkapi dashboard analitik untuk visualisasi distribusi pasien berdasarkan diagnosa.',
             tools: [
                 {
                     key: 'laravel',
@@ -83,7 +83,7 @@ export const project = [
         content: {
             title: 'Kepegawaian RSUD Kota Bogor',
             image: '/portfolio/simpeg-rsud-kota-bogor.jpeg',
-            description: 'Sistem manajemen pegawai berbasis web yang dibangun untuk mendigitalisasi administrasi SDM secara terintegrasi. Sistem ini mencakup berbagai modul untuk menujang pengecekan data diri pegawai dan mendukung kebutuhan administratif maupun audit internal. Sistem ini juga mencakup modul pengajuan cuti dan lembur dengan workflow persetujuan bertingkat berbasis role.',
+            description: 'Sistem manajemen pegawai berbasis web yang dibangun untuk mendigitalisasi administrasi SDM. Sistem ini mencakup berbagai modul untuk menujang pengecekan data diri pegawai dan mendukung kebutuhan administratif maupun audit internal. Sistem ini juga mencakup modul pengajuan cuti dan lembur dengan workflow persetujuan bertingkat berbasis role.',
             tools: [
                 {
                     key: 'laravel',
@@ -135,7 +135,7 @@ export const project = [
         content: {
             title: 'Produk Hukum RSUD Kota Bogor',
             image: '/portfolio/hukum-rsud-kota-bogor.jpg',
-            description: 'Membangun sistem manajemen dokumen hukum untuk pengelolaan arsip digital, serta akses publik terbuka untuk meningkatkan transparansi dan kemudahan distribusi dokumen resmi.',
+            description: 'Membangun sistem manajemen dokumen hukum untuk pengelolaan arsip digital, serta akses publik terbuka untuk meningkatkan transparansi dan kemudahan akses dokumen resmi.',
             tools: [
                 {
                     key: 'laravel',
@@ -161,7 +161,7 @@ export const project = [
         content: {
             title: 'Asesmen medis RSUD Kota Bogor',
             image: '/portfolio/asesmen-medis-rsud-kota-bogor.jpg',
-            description: 'Membangun sistem pencatatan medis terstruktur yang memfasilitasi kolaborasi lintas tenaga kesehatan dalam satu platform terpusat, guna meningkatkan standar dokumentasi, transparansi data, dan efisiensi proses layanan kesehatan.',
+            description: 'Membangun sistem pencatatan medis terstruktur yang memfasilitasi kolaborasi antar tenaga kesehatan dalam satu platform terpusat, guna meningkatkan standar dokumentasi, transparansi data, dan efisiensi proses layanan kesehatan.',
             tools: [
                 {
                     key: 'laravel',
