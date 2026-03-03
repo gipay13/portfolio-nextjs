@@ -21,14 +21,14 @@ export default function Home() {
         icon: (<IconHome className="h-full w-full text-slate-950 dark:text-neutral-300" />),
     },
     {
+      id: 'about',
+      title: "Tentang Saya",
+      icon: (<IconUser className="h-full w-full text-slate-950 dark:text-neutral-300" />),
+    },
+    {
       id: 'portfolio',
       title: "Portolio",
       icon: (<IconBrowserPlus className="h-full w-full text-slate-950 dark:text-neutral-300" />),
-    },
-    {
-        id: 'about',
-        title: "Tentang Saya",
-        icon: (<IconUser className="h-full w-full text-slate-950 dark:text-neutral-300" />),
     },
     {
         id: 'tools',
