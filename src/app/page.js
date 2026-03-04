@@ -129,7 +129,7 @@ export default function Home() {
               <div className="col-span-full md:col-span-3">
                 <BoxReveal boxColorLight="#18181b" boxColorDark="#e5e5e5" duration={0.3}>
                   <div className="p-5 border border-black/20 dark:border-white/20 rounded-xl bg-white dark:bg-black">
-                    <p className="text-lg text-slate-950 dark:text-white">Saya programmer yang berfokus pada pengembangan sistem yang menyederhanakan proses kerja dan memecahkan masalah nyata. Saya terbiasa membangun aplikasi back office yang melibatkan alur data kompleks, automasi perhitungan, dan integrasi antarbagian. Setiap masalah saya tangani dengan memahami kebutuhan pengguna, merancang alur kerja yang efisien, dan memastikan hasilnya minim bug dan mudah digunakan.</p>
+                    <p className="text-lg text-slate-950 dark:text-white">Saya programmer yang berfokus pada pengembangan sistem yang menyederhanakan proses kerja. Saya terbiasa membangun aplikasi back-office yang melibatkan alur data kompleks, automasi perhitungan, dan kolaborasi antar unit. Setiap masalah saya tangani dengan memahami kebutuhan pengguna, merancang alur kerja yang efisien, dan memastikan hasilnya minim bug dan mudah digunakan.</p>
                   </div>
                 </BoxReveal>
               </div>
