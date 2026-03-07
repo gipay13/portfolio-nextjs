@@ -181,4 +181,30 @@ export const project = [
             ]
         },
     },
+    {
+        key: "pengajuan-barang-jasa",
+        title: "Pengajuan Barang dan Jasa RSUD Kota Bogor",
+        content: {
+            title: 'Pengajuan Barang dan Jasa RSUD Kota Bogor',
+            image: '/portfolio/asesmen-medis-rsud-kota-bogor.jpg',
+            description: '',
+            tools: [
+                {
+                    key: 'laravel',
+                    name: 'Laravel',
+                    color: '#f53003'
+                },
+                {
+                    key: 'alpinejs',
+                    name: 'Alpine JS',
+                    color: '#3999b1'
+                },
+                {
+                    key: 'tailwind',
+                    name: 'Tailwind CSS',
+                    color: '#00bcff'
+                },
+            ]
+        },
+    },
   ];
