@@ -5,7 +5,7 @@ export const project = [
         content: {
             title: 'HRG',
             image: '/portfolio/hrg.jpg',
-            description: 'hrg.id adalah website profil perusahaan yang dibangun untuk memperkuat identitas digital HRG sebagai holding company yang menaungi berbagai brand. Situs ini menampilkan portofolio usaha dan modul artikel untuk mendukung strategi SEO, serta terintegrasi dengan API eksternal untuk fitur pemesanan kamar hotel, mencakup autentikasi API, pengambilan data kamar, dan proses booking.',
+            description: 'hrg.id adalah website profil perusahaan yang dibangun untuk memperkuat identitas digital HRG sebagai holding company yang menaungi berbagai brand. Situs ini menampilkan portofolio usaha dan modul artikel untuk mendukung strategi SEO, serta terintegrasi dengan API eksternal untuk fitur pemesanan kamar hotel yang mencakup autentikasi API, pengambilan data kamar, dan proses booking.',
             tools: [
                 {
                     key: 'reactjs',
@@ -57,7 +57,7 @@ export const project = [
         content: {
             title: 'Catatan Perkembangan Pasien Terintegrasi',
             image: '/portfolio/cppt-digital.jpg',
-            description: 'Sistem ini memfasilitasi pencatatan medis digital yang menggunakan metode SOAP untuk membantu tenaga medis dalam mengelola catatan pasien yang terstandarisasi, serta dilengkapi dashboard analitik untuk visualisasi distribusi pasien berdasarkan diagnosa.',
+            description: 'Sistem ini memfasilitasi pencatatan medis digital yang menggunakan metode SOAP untuk membantu tenaga medis dalam mengelola catatan pasien yang terstandarisasi.',
             tools: [
                 {
                     key: 'laravel',
@@ -83,7 +83,7 @@ export const project = [
         content: {
             title: 'Kepegawaian RSUD Kota Bogor',
             image: '/portfolio/simpeg-rsud-kota-bogor.jpeg',
-            description: 'Sistem manajemen pegawai berbasis web yang dibangun untuk mendigitalisasi administrasi SDM. Sistem ini mencakup berbagai modul untuk menujang pengecekan data diri pegawai dan mendukung kebutuhan administratif maupun audit internal. Sistem ini juga mencakup modul pengajuan cuti dan lembur dengan workflow persetujuan bertingkat berbasis role.',
+            description: 'Sistem manajemen pegawai berbasis web yang dibangun sebagai pusat data karyawan. Sistem ini juga mendukung kebutuhan administratif pegawai seeprti cuti dan lembur dan memudahkan struktural untuk melakukan audit internal.',
             tools: [
                 {
                     key: 'laravel',
@@ -109,7 +109,7 @@ export const project = [
         content: {
             title: 'Inventaris SIMRSUD Kota Bogor',
             image: '/portfolio/inventaris-simrsud-kota-bogor.jpeg',
-            description: 'Aplikasi untuk mendukung pengelolaan aset perangkat keras di rumah sakit. Sistem ini mencakup fungsi manajemen aset (hardware, software dan sparepart), distribusi perangkat keras dan laporan kerusakan — membantu tim simrs dalam proses administrasi barang dan mempercepat response time jika ada laporan kerusakan.',
+            description: 'Aplikasi web untuk mendukung pengelolaan aset SIMRS berupa hardware, software, dan sparepart. Sistem ini juga dilengkapi dengan modul laporan kerusakan/error untuk membantu tim SIMRS mempercepat response time jika ada laporan.',
             tools: [
                 {
                     key: 'laravel',
@@ -161,7 +161,7 @@ export const project = [
         content: {
             title: 'Asesmen medis RSUD Kota Bogor',
             image: '/portfolio/asesmen-medis-rsud-kota-bogor.jpg',
-            description: 'Membangun sistem pencatatan medis terstruktur yang memfasilitasi kolaborasi antar tenaga kesehatan dalam satu platform terpusat, guna meningkatkan standar dokumentasi, transparansi data, dan efisiensi proses layanan kesehatan.',
+            description: 'Aplikasi web sistem pencatatan medis terstruktur yang digunakan oleh tenaga medis untuk mencatat rekam medis yang lebih spesifik seperti kanker kolorektal dan administrasi jenazah.',
             tools: [
                 {
                     key: 'laravel',
@@ -187,7 +187,7 @@ export const project = [
         content: {
             title: 'Pengajuan Barang dan Jasa RSUD Kota Bogor',
             image: '/portfolio/asesmen-medis-rsud-kota-bogor.jpg',
-            description: '',
+            description: 'Aplikasi web yang digunakan oleh semua unit untuk melakukan pencatatan pengajuan barang dan jasa yang kemudian akan di verifikasi oleh unit keuangan.',
             tools: [
                 {
                     key: 'laravel',
