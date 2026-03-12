@@ -1,5 +1,4 @@
 import AuroraBackground from "@/components/aurora-background";
-import { BoxReveal } from "@/components/box-reveal";
 import { CardHoverEffect } from "@/components/card-hover-effect";
 import { FloatingDock } from "@/components/floating-dock";
 import Footer from "@/components/footer";
@@ -121,44 +120,105 @@ export default function Home() {
       <section id="about" className="py-20 bg-zinc-100 dark:bg-zinc-950">
         <div className="w-full max-w-4xl mx-auto">
           <div className="flex justify-center md:justify-start mb-10">
-            <BoxReveal boxColorLight="#18181b" boxColorDark="#e5e5e5" duration={0.5}>
+            <SlideContent
+              distance={100}
+              direction="vertical"
+              reverse={false}
+              duration={0.8}
+              ease="power3.out"
+              initialOpacity={0}
+              animateOpacity
+              scale={1}
+              threshold={0.1}
+              delay={0.1}
+            >
               <h1 className="text-center md:text-start font-anton text-6xl tracking-wide text-slate-950 dark:text-white px-3">Tentang Saya</h1>
-            </BoxReveal>
+            </SlideContent>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-3 px-3">
-              <div className="col-span-full md:col-span-3">
-                <BoxReveal boxColorLight="#18181b" boxColorDark="#e5e5e5" duration={0.3}>
-                  <div className="p-5 border border-black/20 dark:border-white/20 rounded-xl bg-white dark:bg-black">
-                    <p className="text-lg text-slate-950 dark:text-white">Saya programmer yang berfokus pada pengembangan sistem yang menyederhanakan proses kerja. Saya terbiasa membangun aplikasi back-office yang melibatkan alur data kompleks, automasi perhitungan, dan kolaborasi antar unit. Setiap masalah saya tangani dengan memahami kebutuhan pengguna, merancang alur kerja yang efisien, dan memastikan hasilnya minim bug dan mudah digunakan.</p>
-                  </div>
-                </BoxReveal>
+          <div className="px-3">
+            <SlideContent
+              distance={100}
+              direction="vertical"
+              reverse={false}
+              duration={0.8}
+              ease="power3.out"
+              initialOpacity={0}
+              animateOpacity
+              scale={1}
+              threshold={0.1}
+              delay={0.2}
+            >
+              <div className="p-5 border border-black/20 dark:border-white/20 rounded-xl bg-white dark:bg-black">
+                <p className="text-lg text-slate-950 dark:text-white">Saya programmer yang berfokus pada pengembangan sistem yang menyederhanakan proses kerja. Saya terbiasa membangun aplikasi back-office yang melibatkan alur data kompleks, automasi perhitungan, dan kolaborasi antar unit. Setiap masalah saya tangani dengan memahami kebutuhan pengguna, merancang alur kerja yang efisien, dan memastikan hasilnya minim bug dan mudah digunakan.</p>
               </div>
-              <div className="col-span-full md:col-span-2">
-                <BoxReveal boxColorLight="#18181b" boxColorDark="#e5e5e5" duration={0.8}>
-                  <div className="p-5 border border-black/20 dark:border-white/20 rounded-xl bg-white dark:bg-black">
-                    <h3 className="text-3xl tracking-wide font-anton font-bold text-slate-950 dark:text-white">Pendidikan</h3>
-                    <ul className="list-disc list-inside text-base text-slate-950 dark:text-white">
-                      <li className="">S1 Ilmu Komputer - Universitas Bina Sarana Informatika | 2017-2021</li>
-                    </ul>
-                    <p className="text-lg"></p>
-                  </div>
-                </BoxReveal>
-              </div>
+            </SlideContent>
           </div>
         </div>
       </section>
       <section id="portfolio" className="py-10 px-3 bg-zinc-100 dark:bg-zinc-950">
         <div className="w-full mx-auto">
-          <h1 className="font-anton text-6xl tracking-wide text-center text-slate-950 dark:text-white px-3">Projek Yang Telah Saya Selsaikan</h1>
+          <SlideContent
+            distance={100}
+            direction="vertical"
+            reverse={false}
+            duration={0.8}
+            ease="power3.out"
+            initialOpacity={0}
+            animateOpacity
+            scale={1}
+            threshold={0.1}
+            delay={0.1}
+          >
+            <h1 className="font-anton text-6xl tracking-wide text-center text-slate-950 dark:text-white px-3">Projek Yang Telah Saya Selsaikan</h1>
+          </SlideContent>
           <div className="w-full mt-10 max-w-3xl mx-auto">
-            <Tabs items={project} />
+            <SlideContent
+              distance={100}
+              direction="vertical"
+              reverse={false}
+              duration={0.8}
+              ease="power3.out"
+              initialOpacity={0}
+              animateOpacity
+              scale={1}
+              threshold={0.1}
+              delay={0.2}
+            >
+              <Tabs items={project} />
+            </SlideContent>
           </div>
         </div>
       </section>
       <section id="tools" className="py-10 bg-zinc-100 dark:bg-zinc-950">
         <div className="w-full max-w-5xl mx-auto">
-          <h1 className="font-anton text-6xl tracking-wide text-center text-slate-950 dark:text-white px-3">DevTools Yang Saya Gunakan</h1>
-          <CardHoverEffect items={tools} />
+          <SlideContent
+            distance={100}
+            direction="vertical"
+            reverse={false}
+            duration={0.8}
+            ease="power3.out"
+            initialOpacity={0}
+            animateOpacity
+            scale={1}
+            threshold={0.1}
+            delay={0.1}
+          >
+            <h1 className="font-anton text-6xl tracking-wide text-center text-slate-950 dark:text-white px-3">DevTools Yang Saya Gunakan</h1>
+          </SlideContent>
+          <SlideContent
+              distance={100}
+              direction="vertical"
+              reverse={false}
+              duration={0.8}
+              ease="power3.out"
+              initialOpacity={0}
+              animateOpacity
+              scale={1}
+              threshold={0.1}
+              delay={0.2}
+            >
+              <CardHoverEffect items={tools} />
+          </SlideContent>
         </div>
       </section>
       <Footer/>

@@ -7,7 +7,6 @@ export default function PortfolioCard({ data }) {
         <div className="p-5 rounded-lg bg-white dark:bg-black border border-black/10 dark:border-white/10 min-w-0">
             <Image
                 className="w-full object-cover rounded-md"
-                placeholder="blur"
                 src={data.image}
                 alt={data.title}
                 width={1000}

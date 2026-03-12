@@ -85,12 +85,6 @@ export const tools = [
         link: "https://www.codeigniter.com/",
     },
     {
-        logo: '/logo/Material-UI.png',
-        title: "Material UI",
-        description: "Modern React component",
-        link: "https://mui.com/",
-    },
-    {
         logo: '/logo/Docker.png',
         title: "Docker",
         description: "Containerization platform",
