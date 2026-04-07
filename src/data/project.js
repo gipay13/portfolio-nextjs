@@ -105,11 +105,11 @@ export const project = [
     },
     {
         key: "inventaris",
-        title: "Inventaris SIMRSUD Kota Bogor",
+        title: "Inventaris",
         content: {
-            title: 'Inventaris SIMRSUD Kota Bogor',
+            title: 'Inventaris',
             image: '/portfolio/inventaris-simrsud-kota-bogor.jpeg',
-            description: 'Aplikasi web untuk mendukung pengelolaan aset SIMRS berupa hardware, software, dan sparepart. Sistem ini juga dilengkapi dengan modul laporan kerusakan/error untuk membantu tim SIMRS mempercepat response time jika ada laporan.',
+            description: 'Aplikasi untuk mendukung pengelolaan aset perangkat keras. Sistem ini mencakup fungsi manajemen aset (hardware, software dan sparepart), distribusi perangkat keras dan laporan kerusakan — membantu tim simrs dalam proses administrasi barang dan mempercepat response time jika ada laporan kerusakan.',
             tools: [
                 {
                     key: 'laravel',
@@ -157,37 +157,11 @@ export const project = [
     },
     {
         key: "asesmen-medis",
-        title: "Asesmen medis RSUD Kota Bogor",
+        title: "Asesmen medis",
         content: {
-            title: 'Asesmen medis RSUD Kota Bogor',
+            title: 'Asesmen medis',
             image: '/portfolio/asesmen-medis-rsud-kota-bogor.jpg',
-            description: 'Aplikasi web sistem pencatatan medis terstruktur yang digunakan oleh tenaga medis untuk mencatat rekam medis yang lebih spesifik seperti kanker kolorektal dan administrasi jenazah.',
-            tools: [
-                {
-                    key: 'laravel',
-                    name: 'Laravel',
-                    color: '#f53003'
-                },
-                {
-                    key: 'alpinejs',
-                    name: 'Alpine JS',
-                    color: '#3999b1'
-                },
-                {
-                    key: 'tailwind',
-                    name: 'Tailwind CSS',
-                    color: '#00bcff'
-                },
-            ]
-        },
-    },
-    {
-        key: "pengajuan-barang-jasa",
-        title: "Pengajuan Barang dan Jasa RSUD Kota Bogor",
-        content: {
-            title: 'Pengajuan Barang dan Jasa RSUD Kota Bogor',
-            image: '/portfolio/asesmen-medis-rsud-kota-bogor.jpg',
-            description: 'Aplikasi web yang digunakan oleh semua unit untuk melakukan pencatatan pengajuan barang dan jasa yang kemudian akan di verifikasi oleh unit keuangan.',
+            description: 'Membangun sistem pencatatan medis terstruktur yang memfasilitasi kolaborasi lintas tenaga kesehatan dalam satu platform terpusat, guna meningkatkan standar dokumentasi, transparansi data, dan efisiensi proses layanan kesehatan.',
             tools: [
                 {
                     key: 'laravel',
