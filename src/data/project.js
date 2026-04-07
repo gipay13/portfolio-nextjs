@@ -105,11 +105,11 @@ export const project = [
     },
     {
         key: "inventaris",
-        title: "Inventaris",
+        title: "Inventaris IT",
         content: {
             title: 'Inventaris',
             image: '/portfolio/inventaris-simrsud-kota-bogor.jpeg',
-            description: 'Aplikasi untuk mendukung pengelolaan aset perangkat keras. Sistem ini mencakup fungsi manajemen aset (hardware, software dan sparepart), distribusi perangkat keras dan laporan kerusakan — membantu tim simrs dalam proses administrasi barang dan mempercepat response time jika ada laporan kerusakan.',
+            description: 'Aplikasi untuk mendukung pengelolaan aset perangkat keras. Sistem ini mencakup fungsi manajemen aset (hardware, software dan sparepart), distribusi perangkat keras dan laporan kerusakan — membantu tim IT dalam proses administrasi barang dan mempercepat response time jika ada laporan kerusakan.',
             tools: [
                 {
                     key: 'laravel',
